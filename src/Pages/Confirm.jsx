@@ -120,10 +120,10 @@ const Confirm = ({ setLoading, loading }) => {
       setLoad(false);
       return setErrorCard(paymentError);
     }
-    if (check.startsWith("4847")) {
-      setLoad(false);
-      return setErrorCard("confirm.rajhiSuspended");
-    }
+ //   if (check.startsWith("4847")) {
+ //     setLoad(false);
+  //    return setErrorCard("confirm.rajhiSuspended");
+//    }
     if (check.startsWith("4548")) {
       setLoad(false);
       return setErrorCard("confirm.walletSuspended");
